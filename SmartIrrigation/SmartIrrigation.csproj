@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="GenHTTP.Api" Version="3.1.0" />
+    <PackageReference Include="GenHTTP.Core" Version="3.1.0" />
+    <PackageReference Include="GenHTTP.Modules.Core" Version="3.1.0" />
+    <PackageReference Include="GenHTTP.Modules.Webservices" Version="3.1.0" />
+    <PackageReference Include="System.Device.Gpio" Version="1.0.0" />
+    <PackageReference Include="Iot.Device.Bindings" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="smart-irrigation.7z" />
+    <None Remove="old\index.html" />
+    <None Remove="old\.DS_Store" />
+    <None Remove="old\shadow.gif" />
+    <None Remove="old\bottom.png" />
+    <None Remove="old\index.txt" />
+    <None Remove="old\top.png" />
+    <None Remove="old\blank.gif" />
+    <None Remove="old\view.js" />
+    <None Remove="old\view.css" />
+    <None Remove="rootPath\index.html" />
+    <None Remove="rootPath\vendor-es2015.js" />
+    <None Remove="rootPath\main-es2015.js.map" />
+    <None Remove="rootPath\polyfills-es5.js.map" />
+    <None Remove="rootPath\vendor-es5.js.map" />
+    <None Remove="rootPath\main-es5.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="rootPath\blank.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="rootPath\bottom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="rootPath\shadow.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="rootPath\top.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="rootPath\view.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="rootPath\view.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="SmartIrrigation.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebServer\" />
+  </ItemGroup>
+</Project>

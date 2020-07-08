@@ -1,0 +1,6 @@
+﻿{
+  "MinValueForIrrigation": 1000,
+  "CheckMoistureAfterIrrigationHours": 36,
+  "CheckMoistureAftertNotIrrigationHours": 3,
+  "MinutesIrrigation": 3
+}
