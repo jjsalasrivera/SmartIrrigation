@@ -5,6 +5,8 @@
         <h3>Datos de la ultima lectura</h3>
         <div class="label">Fecha de lectura: </div>
         <div class="lectura">{{lastRead}}</div><br><br>
+        <div class="label">Last irrigation: </div>
+        <div class="lectura">{{lastIrrigation}}</div><br><br>
         <div class="label">Sensor 1: </div>
         <div class="lectura">{{s1}}</div><br><br>
         <div class="label">Sensor 2: </div>
@@ -15,12 +17,10 @@
         <div class="lectura">{{s4}}</div><br><br>
         <div class="label">Media:  </div>
         <div class="lectura">{{average}}</div><br><br>
-        <div class="label">Valor minimo para regar: </div>
+        <div class="label">Minimun valut to start irrigation: </div>
         <div class="lectura">{{minValue}}</div><br><br>
-        <div class="label">Proxima lectura: </div>
+        <div class="label">Next read: </div>
         <div class="lectura">{{nextRead }}</div><br><br>
-        <div class="label">Ultimo riego: </div>
-        <div class="lectura">{{lastIrrigation}}</div><br><br>
         <div class="label">Status: </div>
         <div class="lectura">{{status}}</div><br><br>
         <div class="label">Notes: </div>
@@ -29,7 +29,7 @@
     </div>
     <br>
     <div class="row">
-        <div class="col-4"><button class="button_text" (click)="forceIrrigation()">Force {{minutes}} irrigation</button></div>
+        <div class="col-4"><button class="button_text" (click)="forceIrrigation()">Force {{minutes}} minutes irrigation</button></div>
         <br>
         <div class="col-4"><button class="button_text" (click)="forceRead()">Force Read</button></div>
     </div>
