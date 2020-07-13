@@ -23,7 +23,7 @@ namespace SmartIrrigation
 		private const string STANDBY = "Standby";
 		private const string IRRIGATING = "Irrigating";
 
-		private const int IRRIGATIONPIN = 2;
+		private const int IRRIGATIONPIN = 0;
 		private const int READTRANSISTORPIN = 3;
 
 		private const int NOTCONNECTEDTHRESOHLD = 200;
@@ -179,7 +179,7 @@ namespace SmartIrrigation
 
 						_log.Info( $"Value of sensor {i + 1}: {sensorValue}" );
 
-						if( sensorValue > NOTCONNECTEDTHRESOHLD ) // Sensor is not on earth
+						if( sensorValue > NOTONEARTHTHRESHOLD ) // Sensor is not on earth
 						{
 							notes = notes + $"Sensor {i + 1} is not on earth | ";
 
