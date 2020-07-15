@@ -13,7 +13,7 @@ export class IrrigationRead {
   nextRead: Date;
   lastIrrigation: Date;
   status: string;
-  MinutesIrrigation: number;
+  minutesIrrigation: number;
   notes: string;
 }
 

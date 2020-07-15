@@ -48,7 +48,7 @@ export class MainComponent implements OnInit {
         this.nextRead = res.nextRead;
         this.lastIrrigation = res.lastIrrigation;
         this.status = res.status;
-        this.minutes = res.MinutesIrrigation;
+        this.minutes = res.minutesIrrigation;
         this.notes = res.notes;
       }
     });

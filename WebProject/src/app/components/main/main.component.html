@@ -4,9 +4,9 @@
         <h2>Smart Irrigation</h2>
         <h3>Datos de la ultima lectura</h3>
         <div class="label">Fecha de lectura: </div>
-        <div class="lectura">{{lastRead}}</div><br><br>
+        <div class="lectura">{{lastRead|date}}</div><br><br>
         <div class="label">Last irrigation: </div>
-        <div class="lectura">{{lastIrrigation}}</div><br><br>
+        <div class="lectura">{{lastIrrigation|date}}</div><br><br>
         <div class="label">Sensor 1: </div>
         <div class="lectura">{{s1}}</div><br><br>
         <div class="label">Sensor 2: </div>
@@ -20,7 +20,7 @@
         <div class="label">Minimun valut to start irrigation: </div>
         <div class="lectura">{{minValue}}</div><br><br>
         <div class="label">Next read: </div>
-        <div class="lectura">{{nextRead }}</div><br><br>
+        <div class="lectura">{{nextRead|date}}</div><br><br>
         <div class="label">Status: </div>
         <div class="lectura">{{status}}</div><br><br>
         <div class="label">Notes: </div>
