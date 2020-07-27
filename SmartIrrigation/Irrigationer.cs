@@ -229,12 +229,12 @@ namespace SmartIrrigation
 
 			for( int i = 0; i < 10; i++ )
 			{
+				Thread.Sleep( 100 );
+
 				var data = _mcp3208.Read( sensor );
 
 				_log.Debug( $"Read sensor {sensor} try {i} = {data}" );
 				v += data;
-
-				Thread.Sleep( 100 );
 			}
 
 			return v / 10;
