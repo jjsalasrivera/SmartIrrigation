@@ -22,7 +22,7 @@ export class IrrigationRead {
 })
 export class MainService {
 
-  public url = 'http://192.168.1.250:8080';
+  public url = '';
   constructor(public http: HttpClient) { }
 
   getLastValues(): Observable<IrrigationRead> {
